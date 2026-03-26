@@ -1,10 +1,8 @@
-AOS.init({
-  duration: 1000
-});
-
-const cursor = document.querySelector('.cursor');
-
-document.addEventListener('mousemove', (e) => {
-  cursor.style.top = e.clientY + 'px';
-  cursor.style.left = e.clientX + 'px';
+// Smooth scroll
+document.querySelectorAll("a[href^='#']").forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
 });
