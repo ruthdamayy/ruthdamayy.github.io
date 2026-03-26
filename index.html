@@ -6,64 +6,90 @@
 <title>Ruth Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="cursor"></div>
+<!-- NAV -->
+<header>
+  <h2>Ruth.</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <!-- HERO -->
 <section class="hero">
-  <h1 data-aos="fade-up">RUTH.EXE</h1>
+  <h1 data-aos="fade-up">Hi, I'm Ruth 👋</h1>
+  <h2 data-aos="fade-up" data-aos-delay="100">
+    IT Graduate | AI | Web Developer | UI/UX
+  </h2>
   <p data-aos="fade-up" data-aos-delay="200">
-    > IT Graduate | AI | Web Dev | UI/UX
+    I build modern web applications, AI systems, and user-focused designs.
   </p>
 </section>
 
-<!-- PROJECTS -->
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Information Technology graduate with strong experience in web development, 
+    UI/UX design, and AI-based systems. Passionate about building impactful solutions.
+  </p>
+</section>
+
+<!-- SKILLS -->
 <section class="section">
-  <h2 data-aos="fade-up">PROJECTS</h2>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Laravel</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>TensorFlow</span>
+    <span>MySQL</span>
+    <span>Figma</span>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
 
   <div class="grid">
 
-    <a href="./project-ai.html" class="card" data-aos="zoom-in">
+    <a href="./project-ai.html" class="card" data-aos="fade-up">
       <img src="./images/ai.jpg">
-      <div class="content">
-        <h3>AI DETECTION</h3>
-        <p>Retinopathy CNN Model</p>
-      </div>
+      <h3>AI Retinopathy Detection</h3>
     </a>
 
-    <a href="./project-thesis.html" class="card" data-aos="zoom-in">
+    <a href="./project-thesis.html" class="card" data-aos="fade-up">
       <img src="./images/thesis.jpg">
-      <div class="content">
-        <h3>THESIS SYSTEM</h3>
-        <p>Laravel Management</p>
-      </div>
+      <h3>Thesis Management System</h3>
     </a>
 
-    <a href="./project-uiux.html" class="card" data-aos="zoom-in">
+    <a href="./project-uiux.html" class="card" data-aos="fade-up">
       <img src="./images/uiux.jpg">
-      <div class="content">
-        <h3>UI/UX DESIGN</h3>
-        <p>Eksplor Nusantara</p>
-      </div>
+      <h3>Eksplor Nusantara UI/UX</h3>
     </a>
 
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section">
-  <h2>CONTACT</h2>
-  <p>> ruthdamayanthypurba@gmail.com</p>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: Ruthdamayanthypurba@gmail.com</p>
 </section>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="script.js"></script>
+<script>
+AOS.init();
+</script>
 
 </body>
 </html>
