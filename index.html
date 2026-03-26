@@ -1,115 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ruth Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ruth Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- SEO BASIC -->
+  <meta name="description" content="Portfolio Ruth - IT Graduate, AI, Web Developer, UI/UX">
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<div class="cursor"></div>
+<!-- NAV -->
+<header class="nav">
+  <h2>Ruth.dev</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
+  <div class="hero-text">
     <h1>Hi, I'm Ruth 👋</h1>
-    <p>IT Graduate | AI | Backend | UI/UX</p>
+    <h2>IT Graduate | AI | Web Developer | UI/UX</h2>
+    <p>
+      Passionate in building intelligent systems and modern web applications 
+      with focus on usability and performance.
+    </p>
+    <a href="#projects" class="btn">View Projects</a>
   </div>
 </section>
 
-<!-- ABOUT + SKILLS -->
-<section class="about">
-  <div class="about-grid">
-
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Information Technology graduate with experience in AI, web development,
-        and UI/UX design. Passionate about building impactful digital solutions.
-      </p>
-    </div>
-
-    <div class="skills">
-      <h2>Skills</h2>
-      <div class="skill-list">
-        <span>Laravel</span>
-        <span>JavaScript</span>
-        <span>Python</span>
-        <span>TensorFlow</span>
-        <span>MySQL</span>
-        <span>Figma</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- PROJECT -->
-<section class="projects">
-  <h2>Selected Projects</h2>
-
-  <div class="project-grid">
-
-    <a href="./project-ai.html" class="project-card">
-      <img src="./images/ai.jpg">
-      <div>
-        <h3>AI Retinopathy</h3>
-        <p>Deep learning detection system</p>
-      </div>
-    </a>
-
-    <a href="./project-thesis.html" class="project-card">
-      <img src="./images/thesis.jpg">
-      <div>
-        <h3>Thesis System</h3>
-        <p>Laravel web application</p>
-      </div>
-    </a>
-
-    <a href="./project-uiux.html" class="project-card">
-      <img src="./images/uiux.jpg">
-      <div>
-        <h3>UI/UX Design</h3>
-        <p>Figma case study</p>
-      </div>
-    </a>
-
-  </div>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am an Information Technology graduate with experience in Artificial Intelligence,
+    web development, and UI/UX design. I enjoy solving real-world problems through 
+    technology and building impactful digital solutions.
+  </p>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="experience">
+<section id="experience" class="section">
   <h2>Experience</h2>
 
-  <div class="exp-list">
-    <div>
-      <strong>Bangkit Academy</strong>
-      <p>Mobile Development Cohort</p>
+  <div class="card">
+    <h3>Bangkit Academy</h3>
+    <p>Mobile Development Cohort</p>
+  </div>
+
+  <div class="card">
+    <h3>Eduwork</h3>
+    <p>UI/UX Designer</p>
+  </div>
+
+  <div class="card">
+    <h3>Upskill.id</h3>
+    <p>Laravel Mentor</p>
+  </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>Information Technology</h3>
+    <p>University (Isi sesuai CV)</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <span>Laravel</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>TensorFlow</span>
+    <span>MySQL</span>
+    <span>Figma</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="project">
+      <img src="images/project1.jpg"/>
+      <h3>AI Retinopathy Detection</h3>
+      <p>
+        Deep learning model using CNN (EfficientNet) to classify diabetic 
+        retinopathy severity with high accuracy.
+      </p>
+      <a href="https://repositori.usu.ac.id/handle/123456789/110651" target="_blank">View Project</a>
     </div>
 
-    <div>
-      <strong>Eduwork</strong>
-      <p>UI/UX Designer</p>
+    <div class="project">
+      <img src="images/project2.jpg"/>
+      <h3>Thesis Management System</h3>
+      <p>
+        Web-based system built with Laravel to manage student thesis processes 
+        efficiently and systematically.
+      </p>
+      <a href="https://github.com/ruthdamayy" target="_blank">View Project</a>
     </div>
 
-    <div>
-      <strong>Upskill.id</strong>
-      <p>Laravel Mentor</p>
+    <div class="project">
+      <img src="images/project3.jpg"/>
+      <h3>Eksplor Nusantara (UI/UX)</h3>
+      <p>
+        UI/UX design project focused on tourism exploration with modern and 
+        user-friendly interface using Figma.
+      </p>
+      <a href="#">View Design</a>
     </div>
+
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
+<section id="contact" class="section">
   <h2>Contact</h2>
   <p>Email: ruthdamayanthypurba@gmail.com</p>
+  <p>GitHub: github.com/ruthdamayy</p>
 </section>
 
-<script src="script.js"></script>
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Ruth Portfolio</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
