@@ -1,73 +1,104 @@
-Buatkan saya website portfolio yang sangat modern, premium, dan tidak terlihat seperti template basic.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Gunakan CV yang saya sertakan sebagai sumber utama untuk seluruh konten.
+<title>Ruth Portfolio</title>
 
-Tujuan:
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
 
-* Portfolio ini akan digunakan untuk melamar kerja sebagai [ISI ROLE ANDA, contoh: Frontend Developer]
-* Harus terlihat seperti portfolio profesional level senior, bukan pemula
+<body>
 
-Teknologi:
+<!-- NAV -->
+<header class="nav">
+  <h2>Ruth.</h2>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-* HTML, CSS, dan JavaScript (tanpa framework)
-* Gunakan teknik modern CSS (flexbox, grid, animation, glassmorphism atau neumorphism jika cocok)
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>
+      Designing & building <br>
+      intelligent digital products.
+    </h1>
 
-Instruksi utama:
+    <p>
+      IT graduate focused on AI, backend systems, and modern UI/UX experiences.
+    </p>
 
-* Ambil semua data dari CV (nama, pengalaman, skill, project, pendidikan)
-* Ubah menjadi konten website yang engaging dan profesional (bukan copy-paste)
-* Tonjolkan pencapaian dan keunggulan utama
-* Jangan mengarang pengalaman
-* Gunakan placeholder jika ada data kosong
+    <a href="#work" class="btn">See My Work</a>
+  </div>
 
-Desain & UI/UX:
+  <div class="hero-bg"></div>
+</section>
 
-* Modern, clean, dan premium (setara produk teknologi kelas atas)
-* Gunakan dark mode dengan kombinasi warna elegan (misalnya hitam + biru / ungu gradient)
-* Gunakan efek visual seperti:
+<!-- PROJECT FEATURED -->
+<section id="work" class="work">
+  
+  <div class="work-item">
+    <div class="work-text">
+      <h2>AI Retinopathy Detection</h2>
+      <p>
+        Developed a deep learning model using CNN to classify diabetic 
+        retinopathy with high accuracy.
+      </p>
+      <a href="#">View Project →</a>
+    </div>
 
-  * Smooth scroll animation
-  * Hover effects yang menarik
-  * Subtle parallax atau reveal animation saat scroll
-  * Card design modern (shadow, blur, glass effect)
-* Typography harus terlihat profesional (Google Fonts)
-* Layout tidak kaku (hindari tampilan template umum)
+    <img src="images/ai.jpg">
+  </div>
 
-Fitur:
+  <div class="work-item reverse">
+    <img src="images/thesis.jpg">
 
-* Hero section dengan headline kuat + CTA
-* About dengan storytelling singkat
-* Experience dengan layout timeline modern
-* Skills dengan visual menarik (progress bar / badge / icon)
-* Projects dengan card interaktif (hover effect)
-* Contact section
-* Footer elegan
+    <div class="work-text">
+      <h2>Thesis Management System</h2>
+      <p>
+        Built a Laravel-based system to streamline academic workflows 
+        and improve administrative efficiency.
+      </p>
+      <a href="#">View Project →</a>
+    </div>
+  </div>
 
-Kualitas kode:
+</section>
 
-* Clean, rapi, dan well-structured
-* Gunakan semantic HTML
-* CSS dipisah dan terorganisir
-* Tambahkan komentar penting
-* Responsive di semua device
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about-left">
+    <h2>About</h2>
+  </div>
 
-Output:
+  <div class="about-right">
+    <p>
+      I focus on building scalable systems and meaningful user experiences.
+      My background combines AI development, backend engineering, and design thinking.
+    </p>
 
-1. Struktur folder project
-2. File lengkap:
+    <div class="skills">
+      <span>Laravel</span>
+      <span>Python</span>
+      <span>TensorFlow</span>
+      <span>JavaScript</span>
+      <span>Figma</span>
+    </div>
+  </div>
+</section>
 
-   * index.html
-   * style.css
-   * script.js
-3. Semua kode lengkap tanpa dipotong
-4. Instruksi cara menjalankan (langsung buka atau live server)
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Let’s work together</h2>
+  <p>ruthdamayanthypurba@gmail.com</p>
+</section>
 
-Ketentuan penting:
-
-* Hasil harus terlihat unik dan standout
-* Hindari tampilan yang terlalu generic atau seperti template gratisan
-* Buat seolah ini portfolio untuk developer yang ingin masuk perusahaan top
-
-Pastikan:
-
-* Saya bisa langsung copy semua file ke project dan upload ke GitHub tanpa edit besar
+<script src="script.js"></script>
+</body>
+</html>
