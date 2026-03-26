@@ -6,3 +6,127 @@ text: #E5E7EB;
 subtext: #9CA3AF;
 card: rgba(255,255,255,0.04);
 border: rgba(255,255,255,0.08);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0B0F19;
+  color: #E5E7EB;
+  line-height: 1.6;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(12px);
+  background: rgba(11,15,25,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #9CA3AF;
+  max-width: 500px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: #6366F1;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4F46E5;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 10%;
+}
+
+/* WORK */
+.work {
+  padding: 100px 10%;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 120px;
+  align-items: center;
+}
+
+.work-item img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* subtle hover (bukan lebay) */
+.work-item img:hover {
+  transform: scale(1.02);
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  padding: 100px 10%;
+}
+
+.skills span {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 6px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  font-size: 14px;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.contact p {
+  color: #9CA3AF;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #6B7280;
+}
