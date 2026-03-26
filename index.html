@@ -7,25 +7,55 @@
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- CURSOR -->
 <div class="cursor"></div>
+
+<!-- NAV -->
+<header>
+  <h2>Ruth.</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <!-- HERO -->
 <section class="hero">
   <h1 data-aos="fade-up">Hi, I'm Ruth 👋</h1>
   <h2 data-aos="fade-up" data-aos-delay="100">
-    IT Graduate | AI | Web Dev | UI/UX
+    IT Graduate | AI | Backend | UI/UX
   </h2>
 </section>
 
-<!-- PROJECT -->
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Information Technology graduate with experience in AI, web development, 
+    and UI/UX design. Passionate about building efficient and impactful systems.
+  </p>
+</section>
+
+<!-- SKILLS -->
 <section class="section">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Laravel</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>TensorFlow</span>
+    <span>MySQL</span>
+    <span>Figma</span>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects" class="section">
   <h2>Projects</h2>
 
   <div class="grid">
@@ -33,7 +63,8 @@
     <a href="./project-ai.html" class="card">
       <img src="./images/ai.jpg">
       <div class="content">
-        <h3>AI Detection</h3>
+        <h3>AI Retinopathy</h3>
+        <p>Deep learning detection</p>
       </div>
     </a>
 
@@ -41,6 +72,7 @@
       <img src="./images/thesis.jpg">
       <div class="content">
         <h3>Thesis System</h3>
+        <p>Laravel web system</p>
       </div>
     </a>
 
@@ -48,10 +80,39 @@
       <img src="./images/uiux.jpg">
       <div class="content">
         <h3>UI/UX Design</h3>
+        <p>Figma prototype</p>
       </div>
     </a>
 
   </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <h2>Experience</h2>
+
+  <div class="exp">
+    <h4>Bangkit Academy</h4>
+    <p>Mobile Development</p>
+  </div>
+
+  <div class="exp">
+    <h4>Eduwork</h4>
+    <p>UI/UX Designer</p>
+  </div>
+
+  <div class="exp">
+    <h4>Upskill.id</h4>
+    <p>Laravel Mentor</p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: ruthdamayanthypurba@gmail.com</p>
+  <p>GitHub: github.com/ruthdamayy</p>
 </section>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
