@@ -8,7 +8,6 @@
 body {
   background: #020617;
   color: #0ff;
-  overflow-x: hidden;
 }
 
 /* HERO */
@@ -22,12 +21,7 @@ body {
 
 .hero h1 {
   font-size: 60px;
-  color: #0ff;
   text-shadow: 0 0 20px #0ff;
-}
-
-.hero p {
-  color: #a78bfa;
 }
 
 /* SECTION */
@@ -44,16 +38,34 @@ body {
 
 /* CARD */
 .card {
-  padding: 30px;
-  border: 1px solid #0ff;
   text-decoration: none;
   color: #0ff;
-  position: relative;
+  border: 1px solid #0ff;
   overflow: hidden;
+  position: relative;
   transition: 0.3s;
 }
 
-/* GLOW BORDER */
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: 0.3s;
+}
+
+.card:hover img {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+/* CONTENT */
+.content {
+  padding: 15px;
+}
+
+/* GLOW */
 .card::before {
   content: "";
   position: absolute;
@@ -68,7 +80,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px);
   box-shadow: 0 0 20px #0ff;
 }
 
@@ -77,9 +89,8 @@ body {
   width: 20px;
   height: 20px;
   border: 2px solid #0ff;
-  border-radius: 50%;
   position: fixed;
+  border-radius: 50%;
   pointer-events: none;
-  transition: 0.1s;
   box-shadow: 0 0 15px #0ff;
 }
