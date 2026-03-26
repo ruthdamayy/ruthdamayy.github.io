@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background: #0f172a;
-  color: #fff;
+  background: #020617;
+  color: white;
 }
 
 /* NAVBAR */
@@ -17,19 +17,17 @@ header {
   padding: 20px 10%;
   position: fixed;
   width: 100%;
-  background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(10px);
 }
 
 .logo {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
+  color: #aaa;
 }
 
 nav a:hover {
@@ -40,39 +38,44 @@ nav a:hover {
 .hero {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding: 0 10%;
+  position: relative;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 50px;
 }
 
-.hero h3 {
+.hero span {
   color: #38bdf8;
-  margin: 10px 0;
 }
 
 .hero p {
-  max-width: 500px;
+  margin: 15px 0;
+  color: #aaa;
+}
+
+/* GLOW EFFECT */
+.hero-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #38bdf8;
+  filter: blur(150px);
+  right: 10%;
 }
 
 /* BUTTON */
-.btn-group {
-  margin-top: 20px;
-}
-
 .btn, .btn-outline {
   padding: 10px 20px;
-  margin-right: 10px;
   border-radius: 8px;
-  text-decoration: none;
+  margin-right: 10px;
 }
 
 .btn {
   background: #38bdf8;
-  color: #000;
+  color: black;
 }
 
 .btn-outline {
@@ -82,25 +85,43 @@ nav a:hover {
 
 /* SECTION */
 .section {
-  padding: 80px 10%;
+  padding: 100px 10%;
 }
 
-.section h2 {
+h2 {
   margin-bottom: 20px;
 }
 
-/* CARD */
-.card {
+/* SKILLS */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.skill-grid div {
   background: #1e293b;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* PROJECT */
+.project-card {
+  background: #0f172a;
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 10px;
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  background: #334155;
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* TIMELINE */
+.timeline div {
+  margin-bottom: 15px;
 }
 
 /* FOOTER */
