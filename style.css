@@ -1,105 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
-
+/* ===== BASE ===== */
 body {
   background: #020617;
   color: #e2e8f0;
+  overflow-x: hidden;
 }
 
-/* NAV */
-.nav {
-  position: fixed;
-  width: 100%;
-  padding: 20px 10%;
-  display: flex;
-  justify-content: space-between;
-  backdrop-filter: blur(10px);
+/* ===== SCROLL ANIMATION ===== */
+.section,
+.work-item,
+.about,
+.contact {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1s ease;
 }
 
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-  position: relative;
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.hero h1 {
-  font-size: 60px;
-  line-height: 1.1;
-}
-
-.hero p {
-  margin: 20px 0;
-  color: #94a3b8;
-}
-
-.btn {
-  padding: 12px 20px;
-  background: linear-gradient(120deg,#6366f1,#8b5cf6);
-  border-radius: 6px;
-  color: white;
-  text-decoration: none;
-}
-
-/* BACKGROUND GLOW */
+/* ===== PARALLAX HERO ===== */
 .hero-bg {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  background: #6366f1;
-  filter: blur(150px);
-  right: 0;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #6366f1, transparent);
+  filter: blur(120px);
+  top: 20%;
+  right: 10%;
+  transform: translateZ(0);
 }
 
-/* WORK */
-.work {
-  padding: 120px 10%;
-}
-
+/* ===== PROJECT HOVER 3D ===== */
 .work-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 100px;
-  align-items: center;
+  perspective: 1000px;
 }
 
 .work-item img {
-  width: 100%;
-  border-radius: 15px;
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
 }
 
-.reverse {
-  direction: rtl;
+/* ===== CURSOR ===== */
+.cursor {
+  width: 12px;
+  height: 12px;
+  background: #6366f1;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+  box-shadow: 0 0 20px #6366f1;
 }
 
-.reverse * {
-  direction: ltr;
-}
-
-/* ABOUT */
-.about {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 100px 10%;
-}
-
-.skills span {
-  background: #1e293b;
-  padding: 8px 12px;
-  margin: 5px;
-  display: inline-block;
-  border-radius: 20px;
-}
-
-/* CONTACT */
-.contact {
-  text-align: center;
-  padding: 100px 10%;
+.cursor-outline {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #6366f1;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 998;
+  transition: all 0.15s ease;
 }
