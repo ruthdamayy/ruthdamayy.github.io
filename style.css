@@ -97,6 +97,24 @@ body {
   transform: scale(1.02);
 }
 
+.work-item {
+  position: relative;
+}
+
+.work-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(99,102,241,0.08));
+  opacity: 0;
+  transition: 0.4s;
+  border-radius: 12px;
+}
+
+.work-item:hover::after {
+  opacity: 1;
+}
+
 /* ABOUT */
 .about {
   display: grid;
@@ -129,4 +147,52 @@ footer {
   text-align: center;
   padding: 30px;
   color: #6B7280;
+}
+
+a {
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.nav a {
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #6366F1;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.section, .work, .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  max-width: 700px;
+}
+
+.hero p {
+  font-size: 16px;
+}
+
+/* subtle gradient text */
+.hero h1 span {
+  background: linear-gradient(90deg,#6366F1,#8B5CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
