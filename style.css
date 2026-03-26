@@ -10,6 +10,22 @@ body {
   color: #0f172a;
 }
 
+/* NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+}
+
 /* HERO */
 .hero {
   height: 100vh;
@@ -30,6 +46,16 @@ body {
 /* SECTION */
 .section {
   padding: 80px 10%;
+}
+
+/* SKILLS */
+.skills span {
+  background: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 /* GRID */
@@ -62,16 +88,31 @@ body {
   padding: 15px;
 }
 
-/* GLOW HOVER */
+/* HOVER EFFECT */
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 40px rgba(99,102,241,0.3);
+}
+
+/* GRADIENT BORDER EFFECT */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 15px;
+  background: linear-gradient(120deg, #6366f1, #38bdf8);
+  opacity: 0;
+  z-index: -1;
+}
+
+.card:hover::before {
+  opacity: 1;
 }
 
 /* CURSOR */
 .cursor {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: #6366f1;
   border-radius: 50%;
   position: fixed;
@@ -80,14 +121,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* CURSOR TRAIL EFFECT */
-.cursor::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(99,102,241,0.2);
-  top: -10px;
-  left: -10px;
+/* EXPERIENCE */
+.exp {
+  margin-bottom: 15px;
 }
