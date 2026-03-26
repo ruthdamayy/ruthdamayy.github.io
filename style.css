@@ -1,66 +1,8 @@
-/* ===== BASE ===== */
-body {
-  background: #020617;
-  color: #e2e8f0;
-  overflow-x: hidden;
-}
-
-/* ===== SCROLL ANIMATION ===== */
-.section,
-.work-item,
-.about,
-.contact {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: all 1s ease;
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ===== PARALLAX HERO ===== */
-.hero-bg {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, #6366f1, transparent);
-  filter: blur(120px);
-  top: 20%;
-  right: 10%;
-  transform: translateZ(0);
-}
-
-/* ===== PROJECT HOVER 3D ===== */
-.work-item {
-  perspective: 1000px;
-}
-
-.work-item img {
-  transition: transform 0.2s ease;
-  transform-style: preserve-3d;
-}
-
-/* ===== CURSOR ===== */
-.cursor {
-  width: 12px;
-  height: 12px;
-  background: #6366f1;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 999;
-  box-shadow: 0 0 20px #6366f1;
-}
-
-.cursor-outline {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #6366f1;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 998;
-  transition: all 0.15s ease;
-}
+/* warna utama */
+background: #0B0F19;
+primary: #6366F1;
+accent: #8B5CF6;
+text: #E5E7EB;
+subtext: #9CA3AF;
+card: rgba(255,255,255,0.04);
+border: rgba(255,255,255,0.08);
