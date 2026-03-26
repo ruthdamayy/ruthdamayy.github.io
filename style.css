@@ -6,22 +6,8 @@
 }
 
 body {
-  background: #f8fafc;
+  background: linear-gradient(135deg, #e0f2fe, #f5f3ff);
   color: #0f172a;
-}
-
-/* NAV */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10%;
-  background: white;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #555;
 }
 
 /* HERO */
@@ -31,20 +17,14 @@ nav a {
   flex-direction: column;
   justify-content: center;
   padding: 0 10%;
-  background: linear-gradient(135deg, #e0f2fe, #f5f3ff);
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 50px;
 }
 
 .hero h2 {
   color: #6366f1;
-}
-
-.hero p {
-  margin-top: 10px;
-  color: #555;
 }
 
 /* SECTION */
@@ -52,47 +32,62 @@ nav a {
   padding: 80px 10%;
 }
 
-h2 {
-  margin-bottom: 20px;
-}
-
-/* SKILLS */
-.skills span {
-  display: inline-block;
-  background: #e2e8f0;
-  padding: 8px 12px;
-  margin: 5px;
-  border-radius: 20px;
-}
-
-/* PROJECT */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
+/* CARD */
 .card {
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
   text-decoration: none;
   color: black;
+  position: relative;
   transition: 0.3s;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
+/* IMAGE */
 .card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-.card h3 {
+/* CONTENT */
+.content {
   padding: 15px;
 }
 
+/* GLOW HOVER */
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(99,102,241,0.3);
+}
+
+/* CURSOR */
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: #6366f1;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  box-shadow: 0 0 15px #6366f1;
+  transform: translate(-50%, -50%);
+}
+
+/* CURSOR TRAIL EFFECT */
+.cursor::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(99,102,241,0.2);
+  top: -10px;
+  left: -10px;
 }
