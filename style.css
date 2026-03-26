@@ -6,71 +6,58 @@
 }
 
 body {
-  background: #020617;
+  background: #0b0f19;
   color: white;
 }
 
-/* NAVBAR */
+/* NAV */
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px 10%;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(10px);
-}
-
-.logo {
-  font-weight: bold;
+  background: #0b0f19;
 }
 
 nav a {
   margin-left: 20px;
-  text-decoration: none;
   color: #aaa;
+  text-decoration: none;
 }
 
 nav a:hover {
-  color: #38bdf8;
+  color: #fff;
 }
 
 /* HERO */
 .hero {
   height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 10%;
-  position: relative;
 }
 
 .hero h1 {
   font-size: 50px;
 }
 
-.hero span {
+.hero h2 {
   color: #38bdf8;
 }
 
 .hero p {
-  margin: 15px 0;
+  margin-top: 10px;
   color: #aaa;
-}
-
-/* GLOW EFFECT */
-.hero-glow {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: #38bdf8;
-  filter: blur(150px);
-  right: 10%;
 }
 
 /* BUTTON */
 .btn, .btn-outline {
+  margin-top: 20px;
   padding: 10px 20px;
-  border-radius: 8px;
-  margin-right: 10px;
+  border-radius: 6px;
+  display: inline-block;
 }
 
 .btn {
@@ -81,6 +68,7 @@ nav a:hover {
 .btn-outline {
   border: 1px solid #38bdf8;
   color: #38bdf8;
+  margin-left: 10px;
 }
 
 /* SECTION */
@@ -88,39 +76,45 @@ nav a:hover {
   padding: 100px 10%;
 }
 
-h2 {
+.section h2 {
   margin-bottom: 20px;
 }
 
 /* SKILLS */
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
-}
-
-.skill-grid div {
+.skills span {
+  display: inline-block;
   background: #1e293b;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 6px;
 }
 
 /* PROJECT */
-.project-card {
-  background: #0f172a;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.project {
+  background: #111827;
   padding: 20px;
-  margin-bottom: 15px;
   border-radius: 10px;
   transition: 0.3s;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
+.project:hover {
+  transform: translateY(-5px);
 }
 
-/* TIMELINE */
-.timeline div {
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+}
+
+/* EXPERIENCE */
+.exp {
   margin-bottom: 15px;
 }
 
