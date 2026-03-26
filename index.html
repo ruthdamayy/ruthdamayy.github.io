@@ -2,89 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Ruth Cyber Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruth Portfolio</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- AOS (ANIMATION) -->
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-  <h2>Ruth.</h2>
-  <nav>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<!-- CURSOR -->
+<div class="cursor"></div>
 
 <!-- HERO -->
 <section class="hero">
-  <h1 data-aos="fade-up">Hi, I'm Ruth 👋</h1>
+  <h1 data-aos="fade-up">RUTH.EXE</h1>
   <p data-aos="fade-up" data-aos-delay="200">
-    IT Graduate | Backend Developer | UI/UX Designer
+    > IT Graduate | AI | Web Dev | UI/UX
   </p>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2 data-aos="fade-up">Featured Projects</h2>
+<!-- PROJECT -->
+<section class="section">
+  <h2 data-aos="fade-up">SYSTEM PROJECTS</h2>
 
-  <div class="projects-grid">
+  <div class="grid">
 
-    <!-- PROJECT 1 -->
-    <div class="project-card" data-aos="zoom-in">
-      <img src="images/ai.jpg" alt="">
-      <div class="content">
-        <h3>AI Retinopathy Detection</h3>
-        <p>Deep learning mobile app for eye disease detection.</p>
-        <a href="project-ai.html">View Detail →</a>
-      </div>
-    </div>
+    <a href="project-ai.html" class="card" data-aos="zoom-in">
+      <h3>AI DETECTION</h3>
+      <p>Retinopathy CNN Model</p>
+    </a>
 
-    <!-- PROJECT 2 -->
-    <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-      <img src="images/thesis.jpg" alt="">
-      <div class="content">
-        <h3>Thesis System</h3>
-        <p>Laravel-based thesis management system.</p>
-        <a href="project-thesis.html">View Detail →</a>
-      </div>
-    </div>
+    <a href="project-thesis.html" class="card" data-aos="zoom-in" data-aos-delay="100">
+      <h3>THESIS SYSTEM</h3>
+      <p>Laravel Management</p>
+    </a>
 
-    <!-- PROJECT 3 -->
-    <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-      <img src="images/uiux.jpg" alt="">
-      <div class="content">
-        <h3>Eksplor Nusantara</h3>
-        <p>Modern UI/UX travel app design.</p>
-        <a href="project-uiux.html">View Detail →</a>
-      </div>
-    </div>
+    <a href="project-uiux.html" class="card" data-aos="zoom-in" data-aos-delay="200">
+      <h3>UI/UX APP</h3>
+      <p>Eksplor Nusantara</p>
+    </a>
 
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: Ruthdamayanthypurba@gmail.com</p>
+<section class="section">
+  <h2>CONTACT</h2>
+  <p>> ruthdamayanthypurba@gmail.com</p>
 </section>
 
+<!-- JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
